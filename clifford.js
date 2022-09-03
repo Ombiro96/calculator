@@ -6,6 +6,7 @@ let inputEl1=document.getElementById("input-el1")
 let inputEl2=document.getElementById("input-el2")
 let inputEl3=document.getElementById("input-el3")
 let inputEl4=document.getElementById("input-el4")
+let inputEl5=document.getElementById("input-el5")
 inputEl.textContent+="Clifford Ombiro Mwenda"
 function addition(){
     inputEl1.textContent=a+b
@@ -18,4 +19,7 @@ function multiplication(){
 }
 function division(){
     inputEl4.textContent=a/b
+}
+function remainder(){
+    inputEl5.textContent=a%b
 }

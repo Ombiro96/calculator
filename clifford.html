@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="clifford.css">
+    <link rel="icon" type="image/x-icon" href="blackjack.png">
     <title>Calculator</title>
 </head>
 <body>
     <!--Addition, subtraction, multiplication, division-->
     <h1 id="header-el">Calculator Api</h1>
+    <form action="home.html" target="_blank" method="post" autocomplete="on">
+        <label for="firstName">First name: </label>
+        <input type="text" id="firstName" name="firstName"><br>
+        <label for="lastName">Last name: </label>
+        <input type="text" id="lastName" name="lastName"><br>
+        <input type="submit" value="Submit">
+    </form>
     <p id="input-el"></p><br>
     <p id="input-el1"></p><br>
     <button onclick="addition()">Add</button><br>
@@ -19,6 +27,8 @@
     <button onclick="multiplication()">multiplication</button><br>
     <p id="input-el4"></p>
     <button onclick="division()">division</button>
+    <p id="input-el5"></p>
+    <button onclick="remainder()">remainder</button>
     <script src="clifford.js"></script>
 </body>
 </html>
