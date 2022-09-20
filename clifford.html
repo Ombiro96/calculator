@@ -11,24 +11,14 @@
 <body>
     <!--Addition, subtraction, multiplication, division-->
     <h1 id="header-el">Calculator Api</h1>
-    <form action="home.html" target="_blank" method="post" autocomplete="on">
-        <label for="firstName">First name: </label>
-        <input type="text" id="firstName" name="firstName"><br>
-        <label for="lastName">Last name: </label>
-        <input type="text" id="lastName" name="lastName"><br>
-        <input type="submit" value="Submit">
-    </form>
-    <p id="input-el"></p><br>
-    <p id="input-el1"></p><br>
-    <button onclick="addition()">Add</button><br>
-    <p id="input-el2"></p><br>
-    <button onclick="subtraction()">Subtraction</button><br>
-    <p id="input-el3"></p><br>
-    <button onclick="multiplication()">multiplication</button><br>
-    <p id="input-el4"></p>
-    <button onclick="division()">division</button>
-    <p id="input-el5"></p>
-    <button onclick="remainder()">remainder</button>
+    <p id="input-el">API by </p><br>
+    <div class="container">
+        <p class="input-el1"></p>
+    <button onclick="myCalc()"><p class="buttons">+</p></button>
+    <button onclick="myCalc()"><p class="buttons">-</p></button>
+    <button onclick="myCalc()"><p class="buttons">*</p></button>
+    <button onclick="myCalc()"><p class="buttons">/</p></button>
+    <button onclick="myCalc()"><p class="buttons">%</p></button></div>
     <script src="clifford.js"></script>
 </body>
 </html>
