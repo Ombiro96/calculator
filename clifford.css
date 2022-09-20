@@ -16,3 +16,8 @@ p{
     font-weight: bold;
     font-size: large;
 }
+.button-el{
+    display: grid;
+    margin: auto;
+    align-content: space-between;
+}
