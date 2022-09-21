@@ -10,20 +10,47 @@ body{
     margin: 0px;
     background-image: linear-gradient(to left, hsla(50, 100%, 50%, 1.0), hsla(270, 100%, 50%, 1));
 }
-.container{
-    display: grid;
-    align-items: center;
-}
-button{
-    padding: 10px;
-    color: black;
-    background-color: blue;
-    margin: auto;
-}
 #header-el{
     color: hsla(230, 100%, 50%, 1.0);
 }
 #input-el{
     font-weight: bold;
     font-size: large;
+}
+.container{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+.container > button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    color: black;
+    background-color: hsla(230, 100%, 50%, 0.6);
+    margin: none;
+}
+.container > button:hover{
+    background-color: hsla(230, 100%, 50%, 1.0);
+}
+.span-two{
+    grid-column: span 2;
+}
+.output{
+    grid-column: 1/ -1;
+    background-color: hsla(0, 0%, 0%, 1.0);
+    display: flex;
+    align-items: flex-end;
+}
+.previous-op, .current-op{
+    color: hsla(360, 100%, 100%, 1.0);
+}
+#input-el1{
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: hsla(230, 100%, 50%, 0.6);
 }
