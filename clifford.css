@@ -1,7 +1,18 @@
-body{
+/*. is for classes while # is for id*/
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    font-family: sans-serif;
-    background-color: aquamarine;
+    font-weight: normal;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: linear-gradient(to left, hsla(50, 100%, 50%, 1.0), hsla(270, 100%, 50%, 1));
+}
+.container{
+    display: grid;
+    align-items: center;
 }
 button{
     padding: 10px;
@@ -10,14 +21,9 @@ button{
     margin: auto;
 }
 #header-el{
-    color: goldenrod;
+    color: hsla(230, 100%, 50%, 1.0);
 }
-p{
+#input-el{
     font-weight: bold;
     font-size: large;
-}
-.button-el{
-    display: grid;
-    margin: auto;
-    align-content: space-between;
 }
